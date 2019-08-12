@@ -1,6 +1,5 @@
 #!/bin/bash
-
-# 
+ 
 # Make sure you have the latest version of the repo
 echo
 git pull
