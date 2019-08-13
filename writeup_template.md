@@ -22,12 +22,8 @@ The goals / steps of this project are the following:
 [image1]: ./examples/distribution_graph.jpg "training_distribution_graph"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./test_images/1.png "Traffic Sign 1"
-[image5]: ./test_images/2.png "Traffic Sign 2"
-[image6]: ./test_images/3.png "Traffic Sign 3"
-[image7]: ./test_images/4.png "Traffic Sign 4"
-[image8]: ./test_images/5.png "Traffic Sign 5"
-[image9]: ./examples/prediction.jpg "Prediction_graph"
+[image4]: ./examples/test_images.jpg "Test Images"
+[image5]: ./examples/prediction.jpg "Prediction_graph"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -105,9 +101,9 @@ To train the model, I used
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of 100%
-* validation set accuracy of 95.8%
-* test set accuracy of 93%
+* training set accuracy of 99.8%
+* validation set accuracy of 95.6%
+* test set accuracy of 94.0%
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
@@ -130,8 +126,7 @@ If an iterative approach was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image4]
 
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
@@ -140,11 +135,11 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Speed limit (30km/h)  | Speed limit (30km/h)  						| 
-| Bumpy road   			| Bumpy road 	    							|
-| Ahead only			| Ahead only									|
-| No vehicles	  		| No vehicles					 				|
-| Go straight or left	| Go straight or left        					|
+| Speed limit (120km/h) | Speed limit (120km/h)  						| 
+| Pedestrian   			| Pedestrian 	    							|
+| Speed limit (100km/h) | Speed limit (100km/h)  						| 
+| Bumpy road 		    | Bumpy road					 				|
+| Speed limit (30km/h) | Speed limit (30km/h)  	     					| 
 
 
 The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. 
@@ -154,7 +149,7 @@ The model was able to correctly guess 5 of the 5 traffic signs, which gives an a
 The code for making predictions on my final model is located in the 18th cell of the Ipython notebook.
 
 Here's the result:
-![alt text][image9]
+![alt text][image5]
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
