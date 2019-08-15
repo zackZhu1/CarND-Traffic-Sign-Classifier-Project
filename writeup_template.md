@@ -58,7 +58,9 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 #### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
-First of all, I decided to convert the images to grayscale because the color of the same sign doesn't change a lot, so the RGB value of the image is not appropriate to be the feature for training.
+First of all, I decided to convert the images to grayscale because:
+* The model doesn't benefit from using color images since excess information adds extra confusion into learning process.
+* The dimension of the problem for colorful images is three, and the dimension for grayscale image is one, so it can expediate the traiing process if we use grayscale images
 
 Here is an example of a traffic sign image before and after grayscaling.
 
@@ -128,6 +130,10 @@ Here are five German traffic signs that I found on the web:
 
 ![alt text][image4]
 
+In order to let the model classify the new images I found on the web, 
+* I need to use the same pre-processing techniques (grayscale and normalization) so that the images are similar as the training images. 
+* Also, the size of training images is 32X32, so I resize these five images by using cv2.resize method.
+
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -139,7 +145,7 @@ Here are the results of the prediction:
 | Pedestrian   			| Pedestrian 	    							|
 | Speed limit (100km/h) | Speed limit (100km/h)  						| 
 | Bumpy road 		    | Bumpy road					 				|
-| Speed limit (30km/h) | Speed limit (30km/h)  	     					| 
+| Speed limit (30km/h)  | Speed limit (30km/h)  	     				| 
 
 
 The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. 
